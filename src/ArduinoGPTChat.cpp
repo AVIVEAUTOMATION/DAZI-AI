@@ -665,7 +665,7 @@ String ArduinoGPTChat::_processResponse(String response) {
  * Use Audio library's OpenAI speech function to convert text to speech
  * Uses gpt-4o-mini-tts model, alloy voice, mp3 format
  */
-bool ArduinoGPTChat::textToSpeech(String text) {
+bool ArduinoGPTChat::textToSpeech(String text, const char* voice) {
   // Create temporary Audio object
   extern Audio audio;
 
